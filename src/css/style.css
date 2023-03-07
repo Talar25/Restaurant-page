@@ -55,7 +55,7 @@ header .container {
 /* main hero */
 
 .hero-section {
-  margin-bottom: 22rem;
+  padding-bottom: 22rem;
   z-index: 2;
   background-image: linear-gradient(rgba(0, 0, 0, 0.574), rgba(89, 18, 22, 0.34)),url(../img/main.jpg);
   background-size: cover;
@@ -97,8 +97,44 @@ header .container {
 
 /* About section */
 .about-section {
-  background-color: var(--primary-color-dark);
+  padding-top: 10rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color-light);
+  font-size: var(--large-font);
 }
+
+.about-section .container {
+  max-width: 180rem;
+  height: 100rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-section p:first-of-type {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: var(--medium-font);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  box-shadow: 0 2px 30px 2px rgba(0, 0, 0, 0.219);
+
+  transition: 0.5s all;
+}
+
+.gallery-item img:hover {
+transform: scale(1.2);
+}
+
+
 
 
 /* footer */
@@ -106,6 +142,7 @@ header .container {
 
 .footer {
   width: 100vw;
+  background-color: var(--primary-color-darker);
 
   display: flex;
   justify-content: center;
@@ -117,13 +154,13 @@ header .container {
 .footer p {
   font-size: var(--medium-font);
   transition: 0.3s all;
-  color: var(--third-color);
+  color: var(--secondary-color);
 
   padding: 1rem;
 }
 
 .footer p:hover {
-  color: var(--third-color-light)
+  color: var(--secondary-color-light)
 }
 
 a:link,
