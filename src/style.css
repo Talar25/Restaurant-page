@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./Lato/Lato-Regular.ttf') format('ttf'),
+      url('./Lato/Lato-Light.ttf') format('ttf'),
+      url('./Lato/Lato-Thin.ttf') format('ttf'),
+      url('./Lato/Lato-Black.ttf') format('ttf'),
+      url('./Lato/Lato-Black.ttf') format('ttf');
+
+    font-style: normal;
+  }
+  
+   .hello {
+     color: red;
+    font-family: 'MyFont';
+    font-weight: 900;
+   }
