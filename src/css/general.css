@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../Lato/Lato-Regular.ttf') format('ttf'),
+      url('../Lato/Lato-Light.ttf') format('ttf'),
+      url('../Lato/Lato-Thin.ttf') format('ttf'),
+      url('../Lato/Lato-Black.ttf') format('ttf'),
+      url('../Lato/Lato-Black.ttf') format('ttf');
+
+    font-style: normal;
+  }
+
+:root {
+    /* primary color */
+    --primary-color-darker: #350b0d;
+    --primary-color-dark: #470e12;
+    --primary-color: #591216;
+    --primary-color-light: #7a4145;
+    --primary-color-lighter: #9b7173;
+
+
+    /* secondary colors */
+    --secondary-color-darker: #778b79;
+    --secondary-color-dark: #9fbaa2;
+    --secondary-color: #C7E8CA;
+    --secondary-color-light: #d2edd5;
+    --secondary-color-lighter: #ddf1df; 
+
+
+    --third-color-dark: #4a7d47;
+    --third-color: #5D9C59;
+    --third-color-light: #7db07a;
+
+    --white-like-color: #fceaeb;
+    --black-like-color: #2d090b;
+
+    --black-color: #000;
+    --white-color: #fff;
+
+
+    /* fonts */
+    --small-font: 1rem;
+    --regular-font: 1.3rem;
+    --medium-font: 1.7rem;
+    --big-font: 2.3rem;
+    --large-font: 3.15rem;
+    --very-large-font: 4.2rem;
+
+}
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'MyFont';
+
+}
+
+.heading-primary {
+  font-size: 7rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
