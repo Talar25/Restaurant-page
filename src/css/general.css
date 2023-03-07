@@ -67,7 +67,26 @@ body {
 }
 
 .heading-primary {
-  font-size: 7rem;
+  font-size: calc(var(--very-large-font)*2);
   font-weight: 900;
   letter-spacing: 1px;
+  color: var(--secondary-color-light)
+}
+
+.container {
+  max-width: 170rem;
+  margin: 0 auto;
+}
+
+.heading-secondary {
+  font-size: calc(var(--very-large-font)*2.5);
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--secondary-color-lighter);
+  width: 45%;
+}
+
+.heading-secondary span {
+  color: var(--black-color);
+  border-bottom: 4px solid black;
 }

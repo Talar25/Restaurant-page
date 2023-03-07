@@ -1,7 +1,133 @@
+/* header! */
 
-  
-   .hello {
-     color: red;
-    font-family: 'MyFont';
-    font-weight: 900;
-   }
+
+header {
+  background: linear-gradient(var(--primary-color-dark), var(--primary-color-darker)) ;
+  color: var(--secondary-color);
+
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.458);
+  position: fixed;
+  width: 100vw;
+
+  z-index: 99;
+}
+
+
+
+
+header .container {
+  height: 13rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 10px solid var(--primary-color-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 8rem;
+}
+
+.nav .btn {
+  color: var(--secondary-color-light);
+  font-size: var(--big-font);
+  /* border: none; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  transition: 0.3s all;
+}
+
+.nav .btn:hover{
+  transform: scale(1.1);
+  color: var(--secondary-color-lighter);
+}
+
+/* main */
+
+
+
+/* main hero */
+
+.hero-section {
+  margin-bottom: 22rem;
+  z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.574), rgba(89, 18, 22, 0.34)),url(../img/main.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-section .container {
+  padding-top: 40rem;
+}
+
+.hero-box {
+  padding-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text{}
+
+.hero-img{}
+
+.hero-btn:link,
+.herp-btn:visited {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: var(--large-font);
+  color: var(--secondary-color-lighter);
+  font-weight: 500;
+
+  transition: 0.5s all;
+}
+
+.hero-btn:hover{
+  transform: scale(1.1);
+  color: var(--primary-color-dark);
+  font-weight: 900;
+}
+
+
+/* About section */
+.about-section {
+  background-color: var(--primary-color-dark);
+}
+
+
+/* footer */
+
+
+.footer {
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+
+}
+
+.footer p {
+  font-size: var(--medium-font);
+  transition: 0.3s all;
+  color: var(--third-color);
+
+  padding: 1rem;
+}
+
+.footer p:hover {
+  color: var(--third-color-light)
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
