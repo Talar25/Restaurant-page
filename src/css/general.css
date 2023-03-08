@@ -64,6 +64,8 @@ body {
     box-sizing: border-box;
     font-family: 'MyFont';
 
+    overflow-x: hidden;
+
 }
 
 .heading-primary {

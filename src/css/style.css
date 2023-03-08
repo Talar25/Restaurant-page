@@ -135,6 +135,93 @@ transform: scale(1.2);
 }
 
 
+/* menu section */
+
+
+.menu-section {
+  padding: 15rem 0;
+  background-color: var(--primary-color-dark);
+  color: var(--secondary-color);
+  font-size: var(--medium-font);
+
+}
+
+.menu-section .heading-tertiary {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--white-like-color);
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.menu-section .heading-tertiary::before {
+  content: 'Miau...';
+  font-size: var(--medium-font);
+  position: absolute;
+  top: 0;
+  right: -2rem;
+}
+
+.menu {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 6rem;
+  
+}
+
+.menu img {
+  width: 100%;
+  height: auto;
+}
+
+.meal-name {
+  display: inline-block;
+  font-size: var(--very-large-font);
+  margin-bottom: 1rem;
+}
+
+/* contact section */
+
+.contact-section {
+  background-color: var(--primary-color-darker);
+  color: var(--white-like-color);
+  font-size: var(--very-large-font);
+  padding-bottom: 1rem;
+
+
+  position: relative;
+}
+
+.contact-section .heading-tertiary {
+  color: var(--white-like-color);
+  font-weight: 900;
+  font-size: calc(var(--very-large-font)*3);
+  text-shadow: 8px 8px 2px rgba(0, 0, 0, 0.278);
+  margin-bottom: 8rem;
+
+}
+
+.contact-img {
+  background-image: url(../img/contact-1.jpg);
+  background-size: cover;
+  height: 100vh;
+  /* z-index: -1; */
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contact-img .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 /* footer */
@@ -147,7 +234,7 @@ transform: scale(1.2);
   display: flex;
   justify-content: center;
   align-items: center; 
-
+  
 
 }
 
