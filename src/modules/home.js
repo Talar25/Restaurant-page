@@ -1,4 +1,4 @@
-import '../img'
+
 const createHero = function () {
 
     //creation
@@ -48,7 +48,7 @@ const createGallery = function (where) {
         const item = document.createElement('figure');
         item.classList.add('gallery-item');
         const img = document.createElement('img');
-        img.src = `../src/img/cat-${i}.jpg`
+        img.src = `./src/img/cat-${i}.jpg`
         img.alt = 'cat'
 
         item.appendChild(img)
