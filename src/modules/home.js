@@ -1,3 +1,4 @@
+import '../img'
 const createHero = function () {
 
     //creation
