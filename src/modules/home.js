@@ -24,7 +24,8 @@ const createHero = function () {
 
     const button = document.createElement('a');
     button.classList.add('hero-btn');
-    button.textContent = 'Look what we have &rarr;';
+    button.href = '#'
+    button.textContent = 'Look what we have..';
 
     //appending
     heroText.appendChild(heading);
@@ -96,7 +97,10 @@ const createAbout = function () {
 }
 
 
-const createHome = function (){
-    createHero();
-    createAbout();
-}
+
+export const renderHome = () => {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createHero());
+    main.appendChild(createAbout());
+  }

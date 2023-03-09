@@ -19,6 +19,8 @@ const createContact = function () {
     const p2 = document.createElement('p');
     p2.textContent = '+48 555 555 555';
 
+
+    //appending
     container.appendChild(heading);
     container.appendChild(p1);
     container.appendChild(p2);
@@ -27,3 +29,9 @@ const createContact = function () {
 
     return section;
 }
+
+export const renderContact = () => {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createContact());
+  }

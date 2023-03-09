@@ -78,3 +78,9 @@ const createMenu = function () {
 
     return section;
 }
+
+export const renderMenu = () => {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createMenu());
+  }

@@ -1,7 +1,10 @@
 import './css/normalize.css';
 import './css/general.css';
 import './css/style.css';
+import { startSite } from './modules/start';
 
+
+startSite();
 
 
 // function component() {
