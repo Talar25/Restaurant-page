@@ -1,3 +1,10 @@
+import cat1 from '../img/cat-1'
+import cat2 from '../img/cat-2'
+import cat3 from '../img/cat-3'
+import cat4 from '../img/cat-4'
+import cat5 from '../img/cat-5'
+import cat6 from '../img/cat-6'
+
 
 const createHero = function () {
 
@@ -48,7 +55,7 @@ const createGallery = function (where) {
         const item = document.createElement('figure');
         item.classList.add('gallery-item');
         const img = document.createElement('img');
-        img.src = `./src/img/cat-${i}.jpg`
+        img.src = `cat${i}`
         img.alt = 'cat'
 
         item.appendChild(img)
