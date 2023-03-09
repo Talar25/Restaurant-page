@@ -62,7 +62,7 @@ const createMenu = function () {
     heading.classList.add('heading-tertiary');
     heading.textContent = 'Here is our beloved menu';
 
-    const menu = document.createElement('div')
+    const menu = document.createElement('div');
     menu.classList.add('menu');
 
     //appending
