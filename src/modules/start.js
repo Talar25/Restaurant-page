@@ -2,6 +2,46 @@ import { renderHome } from "./home";
 import { renderMenu } from "./menu";
 import { renderContact } from "./contact";
 
+
+const createNav = () => {
+    
+    const nav = document.createElement('nav');
+    nav.classList.add('nav')
+
+
+    //home button
+    const homeButton = document.createElement('a');
+    homeButton.classList.add('btn')
+    homeButton.href = '#';
+    homeButton.textContent = 'Home';
+    homeButton.addEventListener('click', renderHome);
+
+
+    //menu button
+    const menuButton = document.createElement('a');
+    menuButton.classList.add('btn')
+    menuButton.href = '#';
+    menuButton.textContent = 'Menu';
+    menuButton.addEventListener('click', renderMenu);
+
+
+    //contact button
+    const contactButton = document.createElement('a');
+    contactButton.classList.add('btn')
+    contactButton.href = '#';
+    contactButton.textContent = 'Contact';
+    contactButton.addEventListener('click', renderContact);
+
+
+
+    nav.appendChild(homeButton)
+    nav.appendChild(menuButton)
+    nav.appendChild(contactButton)
+
+
+    return nav;
+}
+
 const createHeader = () => {
     const header = document.createElement('header');
 
@@ -12,22 +52,11 @@ const createHeader = () => {
     heading.classList.add('heading-primary');
     heading.textContent = 'Cats pizzeria';
 
-    const nav = document.createElement('nav');
-    nav.classList.add('nav')
 
-    const buttons = ['Home', 'Menu', 'Contact']
 
-    for(let i = 0; i < buttons.length; i++) {
-        const button = document.createElement('a');
-        button.classList.add('btn')
-        button.href = '#';
-        button.textContent = buttons[i];
-
-        nav.appendChild(button);
-    }
 
     container.appendChild(heading);
-    container.appendChild(nav);
+    container.appendChild(createNav());
 
     header.appendChild(container)
 

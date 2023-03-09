@@ -15,7 +15,7 @@ const createContact = function () {
     heading.textContent = 'You are always welcome!';
 
     const p1 = document.createElement('p')
-    p1.textContent = 'Marszalkowska st 1, Warsaw PL<'
+    p1.textContent = 'Marszalkowska st 1, Warsaw PL'
     const p2 = document.createElement('p');
     p2.textContent = '+48 555 555 555';
 

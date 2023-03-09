@@ -53,7 +53,7 @@ const createMeal = ( name, description) => {
 const createMenu = function () {
     //creation
     const section = document.createElement('section');
-    section.classList.add('hero-section')
+    section.classList.add('menu-section')
     
     const container = document.createElement('div');
     container.classList.add('container');
