@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -5,8 +6,13 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    // clean: true,
   },
+  plugins: [new HtmlWebpackPlugin({
+    title: 'Webpack App',
+    filename: 'index.html',
+    template: 'src/template.html',
+  })],
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -22,6 +28,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+      
     ],
   },
 };

@@ -12,6 +12,7 @@ const createNav = () => {
     //home button
     const homeButton = document.createElement('a');
     homeButton.classList.add('btn')
+    homeButton.classList.add('home')
     homeButton.href = '#';
     homeButton.textContent = 'Home';
     homeButton.addEventListener('click', renderHome);

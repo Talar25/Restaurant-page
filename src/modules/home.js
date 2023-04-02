@@ -1,4 +1,6 @@
 
+
+
 const createHero = function () {
 
     //creation
@@ -42,20 +44,36 @@ const createHero = function () {
     return section;
 }
 
-const createGallery = function (where) {
+const createSlider = function () {
+    const slider = document.createElement('div')
+    slider.classList.add('slider');
 
     for(let i = 1; i < 7; i++) {
-        const item = document.createElement('figure');
-        item.classList.add('gallery-item');
-        const img = document.createElement('img');
-        img.src = `./src/img/cat-${i}.jpg`
-        img.alt = 'cat'
+        const slide = document.createElement('div');
+        slide.classList.add('slide');
+        slide.classList.add(`slide--${i}`);
 
-        item.appendChild(img)
-
-        where.appendChild(item)
+        slider.appendChild(slide)
     }
 
+    const buttonLeft = document.createElement('button');
+    buttonLeft.classList.add('slider__btn');
+    buttonLeft.classList.add('slider__btn--left');
+    buttonLeft.textContent = '<'
+
+    const buttonRight = document.createElement('button');
+    buttonRight.classList.add('slider__btn');
+    buttonRight.classList.add('slider__btn--right');
+    buttonRight.textContent = '>'
+
+    const dots = document.createElement('div')
+    dots.classList.add('dots')
+
+    slider.appendChild(buttonLeft)
+    slider.appendChild(buttonRight)
+    slider.appendChild(dots)
+
+    return slider;
 }
 
 
@@ -79,18 +97,17 @@ const createAbout = function () {
     const aboutParagraph2 = document.createElement('p');
     aboutParagraph2.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex reprehenderit doloremque sint, a pariatur, iure distinctio molestiae qui, cum modi aliquam saepe omnis voluptatum quae consequatur laboriosam possimus libero!'
 
-    const gallery = document.createElement('div')
-    gallery.classList.add('gallery')
+    const slider = createSlider();
 
     //appending
-    createGallery(gallery);
+
 
     aboutBox.appendChild(heading)
     aboutBox.appendChild(aboutParagraph1)
     aboutBox.appendChild(aboutParagraph2)
 
     container.appendChild(aboutBox)
-    container.appendChild(gallery)
+    container.appendChild(slider)
 
     section.appendChild(container);
 

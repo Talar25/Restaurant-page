@@ -29,19 +29,19 @@ const createMeal = ( name, description) => {
     const meal = document.createElement('div');
     meal.classList.add('meal');
 
-    const img = document.createElement('img');
-    img.src = '../src/img/pizza-1.jpg' ;
-    img.alt = 'pizza';
+    // const img = document.createElement('img');
+    // img.src = '../src/img/pizza-1.jpg' ;
+    // img.alt = 'pizza';
 
     const span = document.createElement('span');
     span.classList.add('meal-name');
     span.textContent = name;
 
     const p = document.createElement('p');
-    p.classList.add('meal-description"');
+    p.classList.add('meal-description');
     p.textContent = description;
 
-    meal.appendChild(img)
+    // meal.appendChild(img)
     meal.appendChild(span)
     meal.appendChild(p)
 
